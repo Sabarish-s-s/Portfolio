@@ -169,4 +169,29 @@ flex-direction:column;
 align-items:center;
 }
 }
+/* ===== FINAL SPACING FIX ===== */
+
+/* Space between paragraphs */
+.card p{
+margin-bottom:10px;
+line-height:1.6;
+}
+
+/* Space between list items if any */
+.card li{
+margin-left:18px;
+margin-bottom:6px;
+}
+
+/* Space above buttons inside cards */
+.card .btn{
+margin-top:15px;
+display:inline-block;
+}
+
+/* Prevent hero buttons touching */
+.buttons .btn{
+min-width:160px;
+text-align:center;
+}
 
