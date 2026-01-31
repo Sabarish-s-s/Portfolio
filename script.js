@@ -22,10 +22,10 @@ setTimeout(type,400);
 type();
 
 // Modal
-function openModal(title,desc){
-document.getElementById("modal").style.display="flex";
-document.getElementById("mTitle").innerText=title;
-document.getElementById("mDesc").innerText=desc;
+function openModal(title, desc) {
+document.getElementById("modal").style.display = "flex";
+document.getElementById("mTitle").innerText = title;
+document.getElementById("mDesc").innerHTML = desc.replace(/\\n/g, "<br>");
 }
 
 function closeModal(){
