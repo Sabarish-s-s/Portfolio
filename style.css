@@ -149,4 +149,24 @@ padding:10px;
 border-radius:8px;
 border:1px solid #ccc;
 }
+/* Button Layout Fix */
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.top{
+display:flex;
+gap:15px;
+align-items:center;
+}
+@media(max-width:600px){
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+}
 
