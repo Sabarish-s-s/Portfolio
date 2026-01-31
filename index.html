@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabarish Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<h2 class="logo">Sabarish</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#internships">Internships</a>
+<a href="#projects">Projects</a>
+<a href="#gallery">Gallery</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="top">
+<button id="toggleTheme">🌙</button>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+</div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+<img src="images/profile.jpg" class="profile">
+
+<h1>Hi, I'm <span>Sabarish S S</span></h1>
+<h3>Mechanical & Mechatronics Engineering Student</h3>
+<p id="typing"></p>
+
+<div class="buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="https://www.linkedin.com/in/sabarish-s--s-/" target="_blank" class="btn linkedin">LinkedIn</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>A Mechanical and Mechatronics Engineering student with a strong interest in design, additive manufacturing, and prototyping.</p>
+<p>I actively work on design-based projects, focusing on functionality, usability, and real-world application.</p>
+<p>I aim to grow as a design-focused engineer contributing to innovative projects.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Technical Skills</h2>
+
+<div class="grid">
+<div class="card">AutoCAD</div>
+<div class="card">SolidWorks</div>
+<div class="card">Fusion 360</div>
+<div class="card">Arduino</div>
+<div class="card">Python (Basic)</div>
+<div class="card">C++ (Basic)</div>
+<div class="card">FlutterFlow</div>
+<div class="card">IoT Sensors</div>
+</div>
+
+<br>
+<a href="solidworks/" class="btn" target="_blank">Open SolidWorks Folder</a>
+</section>
+
+<!-- INTERNSHIPS -->
+<section id="internships">
+<h2>Internships</h2>
+
+<div class="card">
+<h3>Entrepreneurship Internship</h3>
+<p>She Can Foundation (Internshala)</p>
+<p>Skills: Leadership, Communication, Planning</p>
+<a href="certificates/shecan.pdf" class="btn" target="_blank">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>Mechanical Internship - Meenambika Industries</h3>
+<p>Manufacturing & Industrial Exposure</p>
+<p>Skills: Manufacturing Basics, Safety, Teamwork</p>
+<a href="certificates/meenambika.pdf" class="btn" target="_blank">View Certificate</a>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+<div class="card project" onclick="openModal('Smart Yoga Mat','AI-powered yoga mat for posture correction and tracking.')">
+Smart Yoga Mat
+</div>
+
+<div class="card project" onclick="openModal('Tilt Monitoring System','Angular displacement monitoring using Arduino & MPU6050.')">
+Tilt Monitoring System
+</div>
+
+<div class="card project" onclick="openModal('Smart Dustbin','Contactless dustbin using ultrasonic and IR sensors.')">
+Smart Dustbin
+</div>
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+<div id="modal-box">
+<span onclick="closeModal()">×</span>
+<h2 id="mTitle"></h2>
+<p id="mDesc"></p>
+</div>
+</div>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>Gallery</h2>
+
+<div class="grid">
+<img src="images/gallery1.jpg">
+<img src="images/gallery2.jpg">
+<img src="images/gallery3.jpg">
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+<h3>SNS College of Engineering</h3>
+<p>B.E Mechanical & Mechatronics</p>
+<p>CGPA: 8.04</p>
+</div>
+
+<div class="card">
+<h3>CHAVARA VIDYA BHAVAN MATRIC HR.SEC SCHOOL</h3>
+<p>HSC: 79.33%</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<form>
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Sabarish</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
