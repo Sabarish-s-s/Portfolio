@@ -1,21 +1,21 @@
-// Typing Effect
-const text=["Design Engineer","Additive Manufacturing Enthusiast","Prototyping Specialist"];
+// Typing Animation
+const texts=["Design Engineer","Additive Manufacturing Enthusiast","Prototyping Specialist"];
 let i=0,j=0;
 const typing=document.getElementById("typing");
 
 function type(){
-if(j<text[i].length){
-typing.textContent+=text[i][j++];
+if(j<texts[i].length){
+typing.textContent+=texts[i][j++];
 setTimeout(type,100);
 }else setTimeout(erase,1500);
 }
 
 function erase(){
 if(j>0){
-typing.textContent=text[i].substring(0,--j);
+typing.textContent=texts[i].substring(0,--j);
 setTimeout(erase,60);
 }else{
-i=(i+1)%text.length;
+i=(i+1)%texts.length;
 setTimeout(type,400);
 }
 }
