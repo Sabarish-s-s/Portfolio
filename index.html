@@ -6,9 +6,6 @@
 <title>Sabarish Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
@@ -25,9 +22,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="top">
 <a href="resume.pdf" class="btn fancy" download>Download Resume</a>
-</div>
 </header>
 
 <!-- HOME -->
@@ -41,7 +36,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="buttons">
 <a href="#projects" class="btn fancy">View Projects</a>
 <a href="https://www.linkedin.com/in/sabarish-s--s-/" 
-target="_blank" class="btn fancy linkedin">LinkedIn</a>
+target="_blank" class="btn fancy">LinkedIn</a>
 </div>
 </section>
 
@@ -50,7 +45,7 @@ target="_blank" class="btn fancy linkedin">LinkedIn</a>
 <h2>About Me</h2>
 <p>A Mechanical and Mechatronics Engineering student with a strong interest in design, additive manufacturing, and prototyping.</p>
 <p>I actively work on design-based projects, focusing on functionality, usability, and real-world application.</p>
-<p>I am passionate about continuous learning and aim to grow as a design-focused engineer contributing to innovative and impactful projects.</p>
+<p>I aim to grow as a design-focused engineer contributing to innovative and impactful projects.</p>
 </section>
 
 <!-- SKILLS -->
@@ -66,13 +61,16 @@ target="_blank" class="btn fancy linkedin">LinkedIn</a>
 <div class="card">C++ (Basic)</div>
 <div class="card">FlutterFlow</div>
 <div class="card">IoT Sensors</div>
-<div class="card">Canva</div>
 </div>
 
 <br>
-<a href="solidworks/" class="btn fancy" target="_blank">
-Open SolidWorks Folder
+
+<!-- VIEW SOLIDWORKS FOLDER -->
+<a href="https://github.com/Sabarish-s-s/Portfolio/tree/main/solidworks"
+class="btn fancy" target="_blank">
+View SolidWorks Designs
 </a>
+
 </section>
 
 <!-- INTERNSHIPS -->
@@ -81,17 +79,15 @@ Open SolidWorks Folder
 
 <div class="card">
 <h3>Entrepreneurship Internship – She Can Foundation</h3>
-<p><b>Platform:</b> Internshala</p>
-<p><b>Overview:</b> Learned fundamentals of entrepreneurship, problem identification, and solution development.</p>
-<p><b>Skills Learned:</b> Leadership, Communication, Planning, Time Management</p>
+<p>Platform: Internshala</p>
+<p>Skills Learned: Leadership, Communication, Planning, Time Management</p>
 <a href="certificates/shecan.pdf" class="btn fancy" target="_blank">View Certificate</a>
 </div>
 
 <div class="card">
 <h3>Mechanical Internship – Meenambika Industries</h3>
-<p><b>Duration:</b> 21 Days</p>
-<p><b>Overview:</b> Exposure to manufacturing processes and industrial workflow.</p>
-<p><b>Skills Learned:</b> Manufacturing Basics, Workshop Practices, Safety Procedures, Teamwork</p>
+<p>Duration: 21 Days</p>
+<p>Skills Learned: Manufacturing Basics, Workshop Practices, Safety Procedures, Teamwork</p>
 <a href="certificates/meenambika.pdf" class="btn fancy" target="_blank">View Certificate</a>
 </div>
 
@@ -105,21 +101,21 @@ Open SolidWorks Folder
 
 <div class="card project" onclick="openModal(
 'Smart Yoga Mat – SIH 2024',
-'Project Overview:\\nAI-powered yoga mat providing real-time posture correction, haptic feedback, biometric tracking and smartwatch connectivity.\\n\\nTechnical Stack:\\n• Hardware: ESP32, nRF52840 SoC, Pressure Sensors, IMU, Biometric Sensor, Haptic Modules, LiPo Battery\\n• Software: Arduino IDE, Embedded C, FlutterFlow\\n• Communication: Bluetooth\\n\\nSkills Learned:\\n• Sensor Integration\\n• Embedded Systems Programming\\n• Bluetooth Communication\\n• Mobile App Prototyping'
+'Overview: AI-powered yoga mat for posture correction and biometric tracking.\n\nTechnical Stack:\nHardware: ESP32, nRF52840, Pressure Sensors, IMU\nSoftware: Arduino IDE, Embedded C, FlutterFlow\nCommunication: Bluetooth\n\nSkills Learned:\nSensor Integration\nEmbedded Programming\nBluetooth Communication\nMobile App Prototyping'
 )">
 Smart Yoga Mat – SIH 2024
 </div>
 
 <div class="card project" onclick="openModal(
 'Tilt Monitoring System',
-'Project Overview:\\nTilt detection system that monitors angular displacement and triggers alerts for safety-critical environments.\\n\\nTechnical Stack:\\n• Hardware: Arduino Uno, MPU6050, Buzzer\\n• Software: Arduino IDE, Embedded C\\n• Platform: IFTTT\\n\\nSkills Learned:\\n• Arduino Programming\\n• Sensor Interfacing\\n• Embedded C\\n• Circuit Design'
+'Overview: Detects angular tilt and triggers alerts.\n\nTechnical Stack:\nArduino Uno, MPU6050, Buzzer\nArduino IDE, Embedded C\n\nSkills Learned:\nArduino Programming\nSensor Interfacing\nCircuit Design'
 )">
 Tilt Monitoring System
 </div>
 
 <div class="card project" onclick="openModal(
 'Smart Dustbin',
-'Project Overview:\\nContactless dustbin that detects human presence and opens lid automatically.\\n\\nTechnical Stack:\\n• Hardware: Arduino Uno, Ultrasonic Sensor, IR Sensor, Servo Motor, Battery\\n• Software: Arduino IDE\\n\\nSkills Learned:\\n• Ultrasonic Sensor Interfacing\\n• Servo Motor Control\\n• Basic Electronics'
+'Overview: Contactless dustbin using sensors.\n\nTechnical Stack:\nArduino Uno, Ultrasonic Sensor, IR Sensor, Servo Motor\n\nSkills Learned:\nUltrasonic Interfacing\nServo Control\nBasic Electronics'
 )">
 Smart Dustbin
 </div>
@@ -142,7 +138,7 @@ Smart Dustbin
 
 <div class="card">
 <h3>SNS College of Engineering</h3>
-<p>B.E Mechanical & Mechatronics Engineering</p>
+<p>B.E Mechanical & Mechatronics</p>
 <p>CGPA: 8.04</p>
 </div>
 
@@ -163,10 +159,11 @@ Smart Dustbin
 <textarea placeholder="Message"></textarea>
 <button class="btn fancy">Send</button>
 </form>
+
 </section>
 
 <footer>
-<p>© 2026 Sabarish</p>
+<p>© Sabarish</p>
 </footer>
 
 <script src="script.js"></script>
