@@ -22,7 +22,7 @@
 <a href="#contact">Contact</a>
 </nav>
 
-<a href="resume.pdf" class="btn fancy" download>Download Resume</a>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
 </header>
 
 <!-- HOME -->
@@ -34,9 +34,8 @@
 <p id="typing"></p>
 
 <div class="buttons">
-<a href="#projects" class="btn fancy">View Projects</a>
-<a href="https://www.linkedin.com/in/sabarish-s--s-/" 
-target="_blank" class="btn fancy">LinkedIn</a>
+<a href="#projects" class="btn">View Projects</a>
+<a href="https://www.linkedin.com/in/sabarish-s--s-/" target="_blank" class="btn">LinkedIn</a>
 </div>
 </section>
 
@@ -64,12 +63,9 @@ target="_blank" class="btn fancy">LinkedIn</a>
 </div>
 
 <br>
-
-<!-- VIEW SOLIDWORKS FOLDER -->
-<a href="solidworks.pdf" class="btn fancy" target="_blank">
+<a href="solidworks.pdf" target="_blank" class="btn">
 View SolidWorks Designs (PDF)
 </a>
-
 
 </section>
 
@@ -79,16 +75,14 @@ View SolidWorks Designs (PDF)
 
 <div class="card">
 <h3>Entrepreneurship Internship – She Can Foundation</h3>
-<p>Platform: Internshala</p>
-<p>Skills Learned: Leadership, Communication, Planning, Time Management</p>
-<a href="certificates/shecan.pdf" class="btn fancy" target="_blank">View Certificate</a>
+<p>Skills: Leadership, Communication, Planning, Time Management</p>
+<a href="certificates/shecan.pdf" target="_blank" class="btn">View Certificate</a>
 </div>
 
 <div class="card">
 <h3>Mechanical Internship – Meenambika Industries</h3>
-<p>Duration: 21 Days</p>
-<p>Skills Learned: Manufacturing Basics, Workshop Practices, Safety Procedures, Teamwork</p>
-<a href="certificates/meenambika.pdf" class="btn fancy" target="_blank">View Certificate</a>
+<p>Skills: Manufacturing Basics, Workshop Practices, Safety, Teamwork</p>
+<a href="certificates/meenambika.pdf" target="_blank" class="btn">View Certificate</a>
 </div>
 
 </section>
@@ -99,25 +93,19 @@ View SolidWorks Designs (PDF)
 
 <div class="grid">
 
-<div class="card project" onclick="openModal(
-'Smart Yoga Mat – SIH 2024',
-'Overview: AI-powered yoga mat for posture correction and biometric tracking.\n\nTechnical Stack:\nHardware: ESP32, nRF52840, Pressure Sensors, IMU\nSoftware: Arduino IDE, Embedded C, FlutterFlow\nCommunication: Bluetooth\n\nSkills Learned:\nSensor Integration\nEmbedded Programming\nBluetooth Communication\nMobile App Prototyping'
-)">
-Smart Yoga Mat – SIH 2024
+<div class="card project" onclick="openModal('Smart Yoga Mat','AI-powered yoga mat providing real-time posture correction, haptic feedback, biometric tracking and smartwatch connectivity.')">
+<h3>Smart Yoga Mat – SIH 2024</h3>
+<p class="hint">Click to view project overview</p>
 </div>
 
-<div class="card project" onclick="openModal(
-'Tilt Monitoring System',
-'Overview: Detects angular tilt and triggers alerts.\n\nTechnical Stack:\nArduino Uno, MPU6050, Buzzer\nArduino IDE, Embedded C\n\nSkills Learned:\nArduino Programming\nSensor Interfacing\nCircuit Design'
-)">
-Tilt Monitoring System
+<div class="card project" onclick="openModal('Tilt Monitoring System','Tilt detection system that monitors angular displacement and triggers alerts for safety-critical environments.')">
+<h3>Tilt Monitoring System</h3>
+<p class="hint">Click to view project overview</p>
 </div>
 
-<div class="card project" onclick="openModal(
-'Smart Dustbin',
-'Overview: Contactless dustbin using sensors.\n\nTechnical Stack:\nArduino Uno, Ultrasonic Sensor, IR Sensor, Servo Motor\n\nSkills Learned:\nUltrasonic Interfacing\nServo Control\nBasic Electronics'
-)">
-Smart Dustbin
+<div class="card project" onclick="openModal('Smart Dustbin','Contactless dustbin that detects human presence and opens lid automatically.')">
+<h3>Smart Dustbin</h3>
+<p class="hint">Click to view project overview</p>
 </div>
 
 </div>
@@ -138,7 +126,7 @@ Smart Dustbin
 
 <div class="card">
 <h3>SNS College of Engineering</h3>
-<p>B.E Mechanical & Mechatronics</p>
+<p>B.E Mechanical & Mechatronics Engineering</p>
 <p>CGPA: 8.04</p>
 </div>
 
@@ -157,16 +145,15 @@ Smart Dustbin
 <input type="text" placeholder="Name" required>
 <input type="email" placeholder="Email" required>
 <textarea placeholder="Message"></textarea>
-<button class="btn fancy">Send</button>
+<button class="btn">Send</button>
 </form>
 
 </section>
 
 <footer>
-<p>© Sabarish</p>
+<p>© 2026 Sabarish</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
