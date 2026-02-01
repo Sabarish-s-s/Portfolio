@@ -76,6 +76,12 @@ background:white;
 padding:22px;
 border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,0.12);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
 }
 
 .card p{margin-bottom:8px;}
@@ -91,15 +97,29 @@ margin-top:20px;
 .btn{
 padding:12px 24px;
 border-radius:30px;
-background:#0284c7;
+background:linear-gradient(135deg,#0284c7,#38bdf8);
 color:white;
 text-decoration:none;
 border:none;
 cursor:pointer;
+box-shadow:0 0 15px rgba(56,189,248,0.8);
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 10px rgba(56,189,248,0.6);}
+to{box-shadow:0 0 25px rgba(56,189,248,1);}
 }
 
 .btn:hover{
-background:#0369a1;
+transform:scale(1.07);
+}
+
+.hint{
+font-size:13px;
+color:#0284c7;
+font-style:italic;
+margin-top:6px;
 }
 
 #modal{
