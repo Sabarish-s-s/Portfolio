@@ -1,5 +1,5 @@
 // Typing Animation
-const texts=["Design Engineer","Additive Manufacturing Enthusiast","Prototyping Specialist"];
+const texts=["Aspiring Design Engineer ","Passionate about Additive manufacturing"];
 let i=0,j=0;
 const typing=document.getElementById("typing");
 
