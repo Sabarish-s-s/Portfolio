@@ -2,10 +2,9 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:Segoe UI,sans-serif;
 }
 
-/* Animated Background */
 body{
 background:linear-gradient(-45deg,#e0f2fe,#bae6fd,#f0f9ff,#dbeafe);
 background-size:400% 400%;
@@ -24,21 +23,19 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 10%;
-background:rgba(255,255,255,0.9);
+background:white;
 position:fixed;
 width:100%;
 top:0;
-backdrop-filter:blur(8px);
-z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo{color:#0284c7;font-size:22px;}
+.logo{color:#0284c7;}
 
 nav a{
 margin-left:20px;
 text-decoration:none;
-color:#0f172a;
-font-weight:500;
+color:black;
 }
 
 .hero{
@@ -60,14 +57,12 @@ object-fit:cover;
 margin-bottom:20px;
 }
 
+section{padding:90px 10%;}
+
 h2{
 text-align:center;
 margin-bottom:25px;
 color:#0284c7;
-}
-
-section{
-padding:90px 10%;
 }
 
 .grid{
@@ -77,38 +72,34 @@ gap:25px;
 }
 
 .card{
-background:rgba(255,255,255,0.85);
+background:white;
 padding:22px;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.12);
-transition:transform .3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
-.card:hover{
-transform:translateY(-8px);
+.card p{margin-bottom:8px;}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
 }
 
 .btn{
-padding:11px 22px;
+padding:12px 24px;
 border-radius:30px;
+background:#0284c7;
+color:white;
 text-decoration:none;
-font-weight:500;
 border:none;
 cursor:pointer;
 }
 
-.fancy{
-background:linear-gradient(135deg,#0284c7,#38bdf8);
-color:white;
-box-shadow:0 8px 20px rgba(2,132,199,0.4);
-}
-
-.fancy:hover{
-transform:scale(1.05);
-}
-
-.linkedin{
-background:linear-gradient(135deg,#0a66c2,#2563eb);
+.btn:hover{
+background:#0369a1;
 }
 
 #modal{
@@ -125,9 +116,8 @@ align-items:center;
 #modal-box{
 background:white;
 padding:30px;
-border-radius:15px;
-width:420px;
-max-width:90%;
+border-radius:12px;
+width:400px;
 }
 
 #modal-box span{
@@ -149,49 +139,3 @@ padding:10px;
 border-radius:8px;
 border:1px solid #ccc;
 }
-/* Button Layout Fix */
-.buttons{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
-margin-top:20px;
-}
-
-.top{
-display:flex;
-gap:15px;
-align-items:center;
-}
-@media(max-width:600px){
-.buttons{
-flex-direction:column;
-align-items:center;
-}
-}
-/* ===== FINAL SPACING FIX ===== */
-
-/* Space between paragraphs */
-.card p{
-margin-bottom:10px;
-line-height:1.6;
-}
-
-/* Space between list items if any */
-.card li{
-margin-left:18px;
-margin-bottom:6px;
-}
-
-/* Space above buttons inside cards */
-.card .btn{
-margin-top:15px;
-display:inline-block;
-}
-
-/* Prevent hero buttons touching */
-.buttons .btn{
-min-width:160px;
-text-align:center;
-}
-
